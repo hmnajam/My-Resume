@@ -13,7 +13,7 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import heroImage from '../images/header-background.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Najam Saeed',
+  description: 'Official website, resume and blog of Najam Saeed.',
 };
 
 /**
@@ -69,18 +69,20 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Najam.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Karachi based
+        <strong className="text-stone-100"> Full Stack Software Engineer </strong> &
+        <strong className="text-stone-100"> AI Agents Developer</strong>, currently working at
+        <strong className="text-stone-100"> Rapid Content</strong> helping build an AI agent workforce that can generate
+        SEO optimized, quality content rapidly.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me training for <strong className="text-stone-100">Distance Running</strong>
+        ,<strong className="text-stone-100"> Reading</strong>, or riding my
+        <strong className="text-stone-100"> Motorcycle</strong>.
       </p>
     </>
   ),
@@ -104,18 +106,61 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I'm a software developer with a focus on creating AI-driven applications that solve real-world problems. 
+  Skilled in web tech like Next.js, FastAPI, and LangChain, I strive to blend innovation with functionality. 
+  My goal is to build impactful tools that enhance user experiences and drive positive change.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Karachi, PK', Icon: MapIcon},
+    {label: 'Specialization', text: 'Multi-Agent AI Systems', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Pakistani', Icon: FlagIcon},
+    {label: 'Interests', text: 'Reading, Distance Running, Motorcycles', Icon: SparklesIcon},
+    {label: 'Study', text: 'PIAIC', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Rapid Content', Icon: BuildingOffice2Icon},
   ],
 };
+
+/**
+ * Resume section -- TODO: Standardize resume contact format or offer MDX
+ */
+export const education: TimelineItem[] = [
+  {
+    date: 'April 2007',
+    location: 'Clown college',
+    title: 'Masters in Beer tasting',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+  {
+    date: 'March 2003',
+    location: 'School of Business',
+    title: 'What did you study 101',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+];
+
+export const experience: TimelineItem[] = [
+  {
+    date: 'March 2010 - Present',
+    location: 'Awesome Development Company',
+    title: 'Senior UX Engineer',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
+  },
+  {
+    date: 'March 2007 - February 2010',
+    location: 'Garage Startup Studio',
+    title: 'Junior bug fixer',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
+  },
+];
 
 /**
  * Skills section
@@ -173,7 +218,7 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'AI Agents',
     skills: [
       {
         name: 'React Native',
@@ -264,49 +309,6 @@ export const portfolioItems: PortfolioItem[] = [
 ];
 
 /**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
- */
-export const education: TimelineItem[] = [
-  {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-];
-
-export const experience: TimelineItem[] = [
-  {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-  {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-];
-
-/**
  * Testimonial section
  */
 export const testimonial: TestimonialSection = {
@@ -333,7 +335,6 @@ export const testimonial: TestimonialSection = {
 /**
  * Contact section
  */
-
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
   description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
