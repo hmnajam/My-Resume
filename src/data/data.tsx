@@ -124,39 +124,56 @@ export const aboutData: About = {
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'JUly 2024',
+    location: 'PIAIC',
+    title: 'Certified Cloud Applied Generative AI Engineer',
+    content: <p>Learned LangChain, LangGraph, Docker, FastAPI, Python and more.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'March 2023',
+    location: 'Coursera',
+    title: 'Meta Certified Front-End Developer',
+    content: <p>Learned HTML, CSS, React, Git and Github, and more.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'January 2024 - Present',
+    location: 'Rapid Content',
+    title: 'AI Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Working as AI Engineer at Rapid Content. Using Python and FastAPI for backend and API routes development.
+        Developoing AI agents for content generation, optimization and SEO. Using LangChain for LLM integration and
+        LangGraph for agent creation and execution. Also experiended working with Llama Index and CrewAI. Experienced
+        working with Openai GPT3.5, GPT4, GPT4o and GPT4o mini models. Experienced working with Gemini Pro 1.5 Pro and
+        Flash models.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'January 2024 - July 2024',
+    location: 'Chatify',
+    title: 'Full-stack Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Worked as sole Full-stack developer on Chatify whatsapp api. Developed backend using technologies like, NextJS
+        API routes and frontend using NextJS. Setup databases with Neon Postgres and Vercel Postgres and also with
+        Mongodb. Also Developed a few microservices using Typescript and Javascript with Epress. Documented APIs with
+        Swagger and Swagger UI. Used Postman for API testing. Deployed microservices at Render.
+      </p>
+    ),
+  },
+  {
+    date: 'April 2023 - December 2023',
+    location: 'LabCloud',
+    title: 'Front-End Developer',
+    content: (
+      <p>
+        Developed websites for LabCloud's clients using NextJS, React Typescript, TSX and Tailwind CSS. Deployed
+        websites at Vercel. Experienced consuming APIs of different platforms and microservices. Also setup
+        authentication using clerk and used Sanity as headless datastore.
       </p>
     ),
   },
@@ -167,36 +184,39 @@ export const experience: TimelineItem[] = [
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
-    skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
     name: 'Frontend development',
     skills: [
+      {
+        name: 'HTML',
+        level: 8,
+      },
+      {
+        name: 'Tailwind CSS',
+        level: 7,
+      },
+      {
+        name: 'JavaScript',
+        level: 9,
+      },
+      {
+        name: 'Typescript',
+        level: 9,
+      },
       {
         name: 'React',
         level: 9,
       },
       {
-        name: 'Typescript',
+        name: 'NextJS',
+        level: 8,
+      },
+      {
+        name: 'Sanity',
         level: 7,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'Vercel',
+        level: 10,
       },
     ],
   },
@@ -204,16 +224,44 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
-        name: 'Node.js',
+        name: 'Python',
+        level: 7,
+      },
+      {
+        name: 'FastAPI',
+        level: 7,
+      },
+      {
+        name: 'SQL',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'Postgresql',
+        level: 8,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'MongoDB',
+        level: 6,
+      },
+      {
+        name: 'Node.js',
+        level: 9,
+      },
+      {
+        name: 'Express',
+        level: 8,
+      },
+      {
+        name: 'Swagger',
+        level: 9,
+      },
+      {
+        name: 'Postman',
+        level: 9,
+      },
+      {
+        name: 'Render',
+        level: 10,
       },
     ],
   },
@@ -221,16 +269,41 @@ export const skills: SkillGroup[] = [
     name: 'AI Agents',
     skills: [
       {
-        name: 'React Native',
-        level: 9,
+        name: 'LangChain',
+        level: 8,
       },
       {
-        name: 'Flutter',
+        name: 'LangGraph',
+        level: 8,
+      },
+      {
+        name: 'CrewAI',
+        level: 6,
+      },
+      {
+        name: 'LlamaIndex',
+        level: 3,
+      },
+      {
+        name: 'Pinecone',
+        level: 5,
+      },
+      {
+        name: 'Neo4j',
         level: 4,
       },
+    ],
+  },
+  {
+    name: 'Spoken languages',
+    skills: [
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Urdu',
+        level: 10,
+      },
+      {
+        name: 'English',
+        level: 8,
       },
     ],
   },
@@ -341,23 +414,23 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'hmnajam@gmail.com',
+      href: 'mailto:hmnajam@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Karachi, Pakistan',
+      href: 'https://maps.app.goo.gl/qQA8ZFoip3TBFhRB6',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@najamsaeed_',
+      href: 'https://www.instagram.com/najamsaeed_',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'hmnajam',
+      href: 'https://github.com/hmnajam',
     },
   ],
 };
