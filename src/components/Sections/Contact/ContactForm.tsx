@@ -32,10 +32,30 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      /**
-       * This is a good starting point to wire up your form submission logic
-       * */
-      console.log('Data to send: ', data);
+
+      const {message, email, name} = data; // Destructure data for readability
+      // Embed name and email inside the message parameter
+      const fullMessage = `Name: ${name}\n Email: ${email} \n Message: ${message}`;
+
+      // Construct query parameters
+      const queryParams = new URLSearchParams({
+        number: '03122981028',
+        message: fullMessage,
+        apikey: 'a2c3e4f5-6789-0123-bcde-456789abcdef',
+      });
+      const url = `https://chatify.najam.pk/api/v1/sendmessage?${queryParams.toString()}`;
+      try {
+        const response = await fetch(url, {
+          method: 'GET',
+        });
+        if (!response.ok) {
+          throw new Error(`Error: ${response.status}`);
+        }
+        const result = await response.json();
+        console.log('Message sent successfully:', result);
+      } catch (error) {
+        console.error('Failed to send message:', error);
+      }
     },
     [data],
   );
