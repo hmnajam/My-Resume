@@ -53,11 +53,13 @@ const ContactForm: FC = memo(() => {
         }
         const result = await response.json();
         console.log('Message sent successfully:', result);
+        // Reset the form
+        setData(defaultData);
       } catch (error) {
         console.error('Failed to send message:', error);
       }
     },
-    [data],
+    [data, defaultData],
   );
 
   const inputClasses =
