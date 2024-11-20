@@ -359,13 +359,13 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Finalcial Analyst',
     description: 'Analyse financial performance of any company using text prompts.',
-    url: 'https://reactresume.com',
+    url: 'https://github.com/hmnajam/Financial-Analyst',
     image: porfolioImage9,
   },
   {
     title: 'Stylist AI',
     description: 'Your personal AI Stylist.',
-    url: 'https://stylist.najam.pk/',
+    url: 'https://colab.research.google.com/drive/1kJV6rtPiTNXZG2J-RQoh2OAVaiPBKqGv',
     image: porfolioImage6,
   },
   {
