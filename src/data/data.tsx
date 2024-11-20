@@ -340,7 +340,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Rapid Content',
     description: 'Create SEO optimized, quality content rapidly with citations.',
-    url: 'https://rapidcontent.najam.pk/',
+    url: 'https://colab.research.google.com/drive/16B4O97P6AB_b9mOMvE0BfmyMvCL3u6hJ',
     image: porfolioImage5,
   },
 
@@ -371,7 +371,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Camel-Llama',
     description: 'Finetuned Llama 1B on Urdu text dataset.',
-    url: 'https://camel-llama.najam.pk',
+    url: 'https://huggingface.co/Hmnajam/camel-llama',
     image: porfolioImage10,
   },
   // {
