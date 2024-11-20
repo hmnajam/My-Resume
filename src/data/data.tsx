@@ -22,7 +22,7 @@ import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-// import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 // import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
@@ -107,7 +107,7 @@ export const heroData: Hero = {
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `I'm a software developer with a focus on creating AI-driven applications that solve real-world problems. 
-  Skilled in web tech like Next.js, FastAPI, and LangChain, I strive to blend innovation with functionality. 
+  Skilled in web tech like Next.js, FastAPI, LangChain and LangGraph. I strive to blend innovation with functionality. 
   My goal is to build impactful tools that enhance user experiences and drive positive change.`,
   aboutItems: [
     {label: 'Location', text: 'Karachi, PK', Icon: MapIcon},
@@ -124,7 +124,7 @@ export const aboutData: About = {
  */
 export const education: TimelineItem[] = [
   {
-    date: 'JUly 2024',
+    date: 'July 2024',
     location: 'PIAIC',
     title: 'Certified Cloud Applied Generative AI Engineer',
     content: <p>Learned LangChain, LangGraph, Docker, FastAPI, Python and more.</p>,
@@ -160,7 +160,7 @@ export const experience: TimelineItem[] = [
       <p>
         Worked as sole Full-stack developer on Chatify whatsapp api. Developed backend using technologies like, NextJS
         API routes and frontend using NextJS. Setup databases with Neon Postgres and Vercel Postgres and also with
-        Mongodb. Also Developed a few microservices using Typescript and Javascript with Epress. Documented APIs with
+        Mongodb. Also Developed a few microservices using Typescript and Javascript with Express. Documented APIs with
         Swagger and Swagger UI. Used Postman for API testing. Deployed microservices at Render.
       </p>
     ),
@@ -316,7 +316,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'CV Maker',
     description: 'Get your AI generated CV by answering a few questions.',
-    url: 'https://chatify.najam.pk',
+    url: 'https://github.com/hmnajam/crewAI-projects',
     image: porfolioImage1,
   },
   {
@@ -356,12 +356,12 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://visawise.najam.pk/',
     image: porfolioImage8,
   },
-  // {
-  //   title: 'Project title 9',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage9,
-  // },
+  {
+    title: 'Finalcial Analyst',
+    description: 'Analyse financial performance of any company using text prompts.',
+    url: 'https://reactresume.com',
+    image: porfolioImage9,
+  },
   {
     title: 'Stylist AI',
     description: 'Your personal AI Stylist.',
@@ -400,7 +400,7 @@ export const testimonial: TestimonialSection = {
     },
     {
       name: 'Syed Azfar Hussain',
-      text: 'Najam stands out as a forward-thinking founder3 who combines creativity with technical expertise. His passion for building AI-driven innovations is both inspiring and transformative.',
+      text: 'Najam stands out as a forward-thinking founder who combines creativity with technical expertise. His passion for building AI-driven innovations is both inspiring and transformative.',
       image: 'syed-azfar-hussain.jpg',
     },
   ],
@@ -411,7 +411,7 @@ export const testimonial: TestimonialSection = {
  */
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Here are a few ways that you can use to reach out to me.',
   items: [
     {
       type: ContactType.Email,
