@@ -80,7 +80,7 @@ export const heroData: Hero = {
         SEO optimized, quality content rapidly.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training for <strong className="text-stone-100">Distance Running</strong>
+        In my free time, you can catch me training for <strong className="text-stone-100">Distance Running</strong>
         ,<strong className="text-stone-100"> Reading</strong>, or riding my
         <strong className="text-stone-100"> Motorcycle</strong>.
       </p>
