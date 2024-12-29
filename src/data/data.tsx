@@ -74,14 +74,14 @@ export const heroData: Hero = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a Karachi based
-        <strong className="text-stone-100"> Full Stack Software Engineer </strong> &
-        <strong className="text-stone-100"> AI Agents Developer</strong>, currently working at
+        <strong className="text-stone-100"> Agentic AI Engineer </strong> &
+        <strong className="text-stone-100"> Microsoft Certified AI Engineer Associate,</strong> currently working at
         <strong className="text-stone-100"> Rapid Content</strong> helping build an AI agent workforce that can generate
         SEO optimized, quality content rapidly.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time, you can catch me training for <strong className="text-stone-100">Distance Running</strong>
-        ,<strong className="text-stone-100"> Reading</strong>, or riding my
+        In my free time, you can catch me training for <strong className="text-stone-100">Distance Running</strong>,
+        <strong className="text-stone-100"> Reading</strong>, or riding my
         <strong className="text-stone-100"> Motorcycle</strong>.
       </p>
     </>
@@ -395,7 +395,7 @@ export const testimonial: TestimonialSection = {
     },
     {
       name: 'Zia Khan',
-      text: 'Najam’s commitment to learning and growth is unmatched. He has a unique talent for turning complex challenges into simple, effective solutions. It’s a privilege to witness his journey in tech.',
+      text: 'Najam’s a word class developer with an ability to think from the perspective of his customers. It’s a privilege to witness his journey in tech.',
       image: 'zia-khan.jpg',
     },
     {
