@@ -29,38 +29,38 @@ const ContactForm: FC = memo(() => {
     [data],
   );
 
-  const handleSendMessage = useCallback(
-    async (event: React.FormEvent<HTMLFormElement>) => {
-      event.preventDefault();
+  // const handleSendMessage = useCallback(
+  //   async (event: React.FormEvent<HTMLFormElement>) => {
+  //     event.preventDefault();
 
-      const {message, email, name} = data; // Destructure data for readability
-      // Embed name and email inside the message parameter
-      const fullMessage = `Name: ${name}\n Email: ${email} \n Message: ${message}`;
+  //     const {message, email, name} = data; // Destructure data for readability
+  //     // Embed name and email inside the message parameter
+  //     const fullMessage = `Name: ${name}\n Email: ${email} \n Message: ${message}`;
 
-      // Construct query parameters
-      const queryParams = new URLSearchParams({
-        number: '03122981028',
-        message: fullMessage,
-        apikey: 'a2c3e4f5-6789-0123-bcde-456789abcdef',
-      });
-      const url = `https://chatify.najam.pk/api/v1/sendmessage?${queryParams.toString()}`;
-      try {
-        const response = await fetch(url, {
-          method: 'GET',
-        });
-        if (!response.ok) {
-          throw new Error(`Error: ${response.status}`);
-        }
-        const result = await response.json();
-        console.log('Message sent successfully:', result);
-        // Reset the form
-        setData(defaultData);
-      } catch (error) {
-        console.error('Failed to send message:', error);
-      }
-    },
-    [data, defaultData],
-  );
+  //     // Construct query parameters
+  //     const queryParams = new URLSearchParams({
+  //       number: '03122981028',
+  //       message: fullMessage,
+  //       apikey: 'a2c3e4f5-6789-0123-bcde-456789abcdef',
+  //     });
+  //     const url = `https://chatify.najam.pk/api/v1/sendmessage?${queryParams.toString()}`;
+  //     try {
+  //       const response = await fetch(url, {
+  //         method: 'GET',
+  //       });
+  //       if (!response.ok) {
+  //         throw new Error(`Error: ${response.status}`);
+  //       }
+  //       const result = await response.json();
+  //       console.log('Message sent successfully:', result);
+  //       // Reset the form
+  //       setData(defaultData);
+  //     } catch (error) {
+  //       console.error('Failed to send message:', error);
+  //     }
+  //   },
+  //   [data, defaultData],
+  // );
 
   const inputClasses =
     'bg-neutral-700 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm';
