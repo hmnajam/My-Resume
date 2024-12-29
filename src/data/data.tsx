@@ -106,9 +106,10 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm a software developer with a focus on creating AI-driven applications that solve real-world problems. 
-  Skilled in web tech like Next.js, FastAPI, LangChain and LangGraph. I strive to blend innovation with functionality. 
-  My goal is to build impactful tools that enhance user experiences and drive positive change.`,
+  description: `I am an Agentic AI developer dedicated to creating Generative AI agents using LangChain, LangGraph, and 
+  LangSmith, with CrewAI when it fits the project. Alongside this, I work as a full-stack developer, 
+  using Next.js and FastAPI to build modern and reliable web applications. I aim to develop tools and solutions 
+  that are both innovative and practical, improving user experiences and making a positive impact in the world.`,
   aboutItems: [
     {label: 'Location', text: 'Karachi, PK', Icon: MapIcon},
     {label: 'Specialization', text: 'Multi-Agent AI Systems', Icon: CalendarIcon},

@@ -66,7 +66,12 @@ const ContactForm: FC = memo(() => {
     'bg-neutral-700 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm';
 
   return (
-    <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
+    <form
+      action="https://usebasin.com/f/5ff8b4f20000"
+      className="grid min-h-[320px] grid-cols-1 gap-y-4"
+      method="POST"
+      // onSubmit={handleSendMessage}
+    >
       <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" />
       <input
         autoComplete="email"
