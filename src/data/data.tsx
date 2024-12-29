@@ -427,7 +427,7 @@ export const contact: ContactSection = {
     {
       type: ContactType.Instagram,
       text: '@najamsaeed_',
-      href: 'https://www.instagram.com/najamsaeed_',
+      href: 'https://www.instagram.com/hmnajam1',
     },
     {
       type: ContactType.Github,
